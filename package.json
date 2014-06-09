@@ -1,0 +1,35 @@
+{
+  "name": "profiled",
+  "version": "0.0.1",
+  "description": "simple web profile daemon in node.js",
+  "main": "daemon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elf-pavlik/profiled"
+  },
+  "bugs": {
+    "url": "https://github.com/elf-pavlik/profiled/issues"
+  },
+  "keywords": [
+    "profile",
+    "daemon"
+  ],
+  "author": {
+    "name": "elf Pavlik",
+    "email": "perpetual-tripper@wwelves.org",
+    "url": "https://wwelves.org/perpetual-tripper"
+  },
+  "license": "Unlicense",
+  "dependencies": {
+    "express": "~4.4.1",
+    "cors": "~2.3.1"
+  },
+  "devDependencies": {
+    "grunt-develop": "~0.4.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt": "~0.4.5"
+  }
+}

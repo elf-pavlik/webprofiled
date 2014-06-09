@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/"
+  },
+  "@id": "https://wwelves.org/perpetual-tripper",
+  "@type": "Person",
+  "name": "elf Pavlik",
+  "image": "http://wwelves.org/images/elf-pavlik.jpg"
+}
