@@ -15,7 +15,7 @@ function getJSON(nick){
 }
 
 daemon.get('*', function(req, res){
-  var nick = req.params[0].replace('/', '');
+  var nick = req.params[0].replace('/', '').toLowerCase();
   res.format({
     'text/html': function(){
       fs.readFile(config.profilesDir + '/' + nick + '/index.html', function(err, content){
