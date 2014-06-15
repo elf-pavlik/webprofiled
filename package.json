@@ -1,6 +1,6 @@
 {
-  "name": "profiled",
-  "version": "0.0.1",
+  "name": "webprofiled",
+  "version": "0.0.2",
   "description": "simple web profile daemon in node.js",
   "main": "daemon.js",
   "scripts": {
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/elf-pavlik/profiled"
+    "url": "https://github.com/elf-pavlik/webprofiled"
   },
   "bugs": {
-    "url": "https://github.com/elf-pavlik/profiled/issues"
+    "url": "https://github.com/elf-pavlik/webprofiled/issues"
   },
   "keywords": [
     "profile",
