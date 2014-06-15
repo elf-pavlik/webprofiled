@@ -4,6 +4,16 @@
   <h1 property="name">{{name}}</h1>
   <img property="image" src="{{image}}" />
   <p property="description">{{description}}</p>
+  <div rel="homeLocation">
+    <p about="{{homeLocation.id}}" typeof="{{homeLocation.type}}">
+       home: <a property="name" href="{{homeLocation.id}}">{{homeLocation.name}}</a>
+    </p>
+  </div>
+  <div rel="currentLocation">
+    <p about="{{currentLocation.id}}" typeof="{{currentLocation.type}}">
+      current location: <a property="name" href="{{currentLocation.id}}">{{currentLocation.name}}</a>
+    </p>
+  </div>
   <h2>legacy profiles</h2>
   <ul rel="contactPoint">
     {{#each contactPoint}}
