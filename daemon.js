@@ -10,24 +10,31 @@ daemon.use(cors({ origin: true, credentials: true }));
 // CORS Pre-Flight https://github.com/troygoode/node-cors#enabling-cors-pre-flight
 daemon.options('*', cors());
 
+daemon.set('view engine', 'hbs');
+
 function getJSON(nick){
-  return require(config.profilesDir + '/' + nick + '/index.json');
+  //#FIXME make async!
+  return JSON.parse(fs.readFileSync(config.profilesDir + '/' + nick + '/index.json').toString());
 }
+
+daemon.get('/favicon.ico', function(req, res){
+  res.send(404);
+});
 
 daemon.get('*', function(req, res){
   var nick = req.params[0].replace('/', '').toLowerCase();
+  var profile = getJSON(nick);
   res.format({
     'text/html': function(){
-      fs.readFile(config.profilesDir + '/' + nick + '/index.html', function(err, content){
-        res.send(200, content.toString());
-      });
+      console.log(profile);
+      res.render('profile', profile);
     },
     // make JSON-LD
     'application/json': function(){
-      res.json(getJSON(nick));
+      res.json(profile);
     },
     'application/ld+json': function(){
-      res.json(getJSON(nick));
+      res.json(profile);
     }
   });
 });
