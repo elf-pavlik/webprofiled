@@ -26,7 +26,8 @@
   "dependencies": {
     "express": "~4.4.1",
     "cors": "~2.3.1",
-    "hbs": "~2.7.0"
+    "hbs": "~2.7.0",
+    "es6-promise": "~1.0.0"
   },
   "devDependencies": {
     "grunt-develop": "~0.4.0",
