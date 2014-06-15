@@ -1,9 +1,11 @@
 {
   "@context": {
-    "@vocab": "http://schema.org/"
+    "@vocab": "http://schema.org/",
+    "id": "@id",
+    "type": "@type"
   },
-  "@id": "https://wwelves.org/perpetual-tripper",
-  "@type": "Person",
+  "id": "https://wwelves.org/perpetual-tripper",
+  "type": "Person",
   "name": "elf Pavlik",
   "image": "http://wwelves.org/images/elf-pavlik.jpg",
   "description": "#hacker / #elf - living strictly #moneyless and #stateless already for over 5 years! #WorldPeaceGame #proplayer"
