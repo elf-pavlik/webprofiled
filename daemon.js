@@ -22,16 +22,21 @@ daemon.set('view engine', 'hbs');
 /*
  * returns JSON representation of a profile document stored in config.profilesDir
  * parameters
- *   nick - path partial to profile data
+ *   slug - path partial to profile data
  *
  */
-function getProfile(nick){
+function getProfile(slug){
   return new Promise(function(resolve, reject){
-    fs.readFile(config.profilesDir + '/' + nick + '/index.json', function(err, file){
+    fs.readFile(config.profilesDir + '/' + slug + '/index.json', function(err, file){
       if(err){
         reject(err);
       } else {
-        resolve(JSON.parse(file.toString()));
+        try {
+          resolve(JSON.parse(file.toString()));
+        }
+        catch (e) {
+          reject(e);
+        }
       }
     });
   });
@@ -48,9 +53,8 @@ daemon.get('/favicon.ico', function(req, res){
  * sends profile document
  * supports content negotiation: RDFa and JSON-LD
  */
-daemon.get('*', function(req, res){
-  var nick = req.params[0].replace('/', '').toLowerCase();
-  getProfile(nick).then(function(data){
+daemon.get('/:slug/', function(req, res){
+  getProfile(req.params.slug).then(function(data){
     res.format({
       'text/html': function(){
         res.render('profile', data);
@@ -62,8 +66,22 @@ daemon.get('*', function(req, res){
         res.json(data);
       }
     });
+  }).catch(function(err){
+    console.log(err);
+    res.send(500);
   });
 });
+
+/*
+ * 303 redirect for URLs not ending with /
+ * experimental trick for HTTPRange-14
+ * http://en.wikipedia.org/wiki/HTTPRange-14#Use_of_HTTP_Status_Code_303_See_Other
+ */
+
+daemon.get('/:slug', function(req, res){
+  res.redirect(303, req.protocol + '://' + req.get('Host') + req.path + '/');
+});
+
 
 daemon.listen(config.port, function(){
   console.log('listening on ', config.port);
