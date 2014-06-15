@@ -8,5 +8,55 @@
   "type": "Person",
   "name": "elf Pavlik",
   "image": "http://wwelves.org/images/elf-pavlik.jpg",
-  "description": "#hacker / #elf - living strictly #moneyless and #stateless already for over 5 years! #WorldPeaceGame #proplayer"
+  "description": "#hacker / #elf - living strictly #moneyless and #stateless already for over 5 years! #WorldPeaceGame #proplayer",
+  "contactPoint":[
+    {
+      "type": "ContactPoint",
+      "id": "https://github.com/elf-pavlik",
+      "name": "Github"
+    }, {
+      "type": "ContactPoint",
+      "id": "https://twitter.com/elfpavlik",
+      "name": "Twitter"
+    }, {
+      "type": "ContactPoint",
+      "id": "https://plus.google.com/+elfPavlik",
+      "name": "Google+"
+    }, {
+      "type": "ContactPoint",
+      "id": "https://facebook.com/elf.pavlik",
+      "name": "Facebook"
+    }
+  ],
+  "member":[
+    {
+      "type": "Organization",
+      "id": "http://unmonastery.org",
+      "name": "unMonastery"
+    }, {
+      "type": "Organization",
+      "id": "https://wwelves.org",
+      "name": "worldwide elves"
+    }, {
+      "type": "Organization",
+      "id": "http://hackers4peace.net",
+      "name": "hackers4peace"
+    }, {
+      "type": "Organization",
+      "id": "http://moneyless.info",
+      "name": "moneyless world"
+    }, {
+      "type": "Organization",
+      "id": "http://ouishare.net",
+      "name": "OuiShare"
+    }, {
+      "type": "Organization",
+      "id": "http://labs.ouishare.net",
+      "name": "OuiShare Labs"
+    }, {
+      "type": "Organization",
+      "id": "http://edgeryders.eu",
+      "name": "Edgeryders"
+    }
+  ]
 }
