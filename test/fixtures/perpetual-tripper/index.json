@@ -1,11 +1,13 @@
 {
   "@context": {
     "@vocab": "http://schema.org/",
+    "cco": "http://purl.org/ontology/cco/core#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
     "id": "@id",
     "type": "@type"
   },
   "id": "https://wwelves.org/perpetual-tripper",
-  "type": "Person",
+  "type": ["Person", "foaf:Person"],
   "name": "elf Pavlik",
   "image": "http://wwelves.org/images/elf-pavlik.jpg",
   "homeLocation": {
@@ -36,6 +38,22 @@
       "type": "ContactPoint",
       "id": "https://facebook.com/elf.pavlik",
       "name": "Facebook"
+    }
+  ],
+  "cco:habit": [
+    {
+      "type": "cco:CognitiveCharacteristic",
+      "cco:topic": {
+        "id": "http://dbpedia.org/resource/Joint_(cannabis)",
+        "name": "Joint (cannabis)"
+      }
+    },
+    {
+      "type": "cco:CognitiveCharacteristic",
+      "cco:topic": {
+        "id": "http://dbpedia.org/resource/Chocolate",
+        "name": "Chocolate"
+      }
     }
   ],
   "member":[

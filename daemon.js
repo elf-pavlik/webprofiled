@@ -2,6 +2,7 @@ var fs = require('fs');
 var Promise = require('es6-promise').Promise;
 var express = require('express');
 var cors = require('cors');
+var hbs = require('hbs');
 var config = require('./config.json');
 
 var daemon = express();
@@ -18,6 +19,14 @@ daemon.options('*', cors());
 
 // set view engine to handlebars
 daemon.set('view engine', 'hbs');
+
+hbs.registerHelper('j', function(val){
+  if(val.join){
+    return val.join(" ");
+  } else {
+    return val;
+  }
+});
 
 /*
  * returns JSON representation of a profile document stored in config.profilesDir
