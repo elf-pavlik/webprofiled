@@ -8,7 +8,7 @@ var config = require('./config.json');
 var daemon = express();
 
 /*
- * CORS
+ * ###CORS
  *
  * accepts cookies from foreign origin
  * Pre-Flight https://github.com/troygoode/node-cors#enabling-cors-pre-flight
@@ -28,10 +28,10 @@ hbs.registerHelper('j', function(val){
   }
 });
 
-/*
- * returns JSON representation of a profile document stored in config.profilesDir
- * parameters
- *   slug - path partial to profile data
+/**
+ * Provides object with profile data
+ * @param  {String} slug path partial to profile data
+ * @return {Object} JSON representation of a profile document stored in config.profilesDir
  *
  */
 function getProfile(slug){
@@ -82,8 +82,8 @@ daemon.get('/:slug/', function(req, res){
 });
 
 /*
- * 303 redirect for URLs not ending with /
- * experimental trick for HTTPRange-14
+ * ### 303 redirect for URLs not ending with /
+ * experimental trick for [httpRange-14](http://www.w3.org/2001/tag/issues.html#httpRange-14)
  * http://en.wikipedia.org/wiki/HTTPRange-14#Use_of_HTTP_Status_Code_303_See_Other
  */
 
