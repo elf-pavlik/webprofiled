@@ -1,25 +1,39 @@
-var fs = require('fs');
-var Promise = require('es6-promise').Promise;
 var express = require('express');
 var cors = require('cors');
 var hbs = require('hbs');
-var config = require('./config.json');
+var Store = require('./store');
+var config = require('../config.json');
 
 var daemon = express();
 
-/*
- * ###CORS
- *
+/**
+ * ## CORS
+ */
+
+/**
  * accepts cookies from foreign origin
- * Pre-Flight https://github.com/troygoode/node-cors#enabling-cors-pre-flight
  */
 daemon.use(cors({ origin: true, credentials: true }));
+
+/**
+ * handle [Pre-Flight](https://github.com/troygoode/node-cors#enabling-cors-pre-flight)
+ */
 daemon.options('*', cors());
 
 
-// set view engine to handlebars
+/**
+ * ## Views
+ */
+
+/**
+ * set view engine to handlebars
+ */
 daemon.set('view engine', 'hbs');
 
+/**
+ * handlebars helper to join arrays into space separated strings
+ * used for example when resource has multiple classes in `typeof`
+ */
 hbs.registerHelper('j', function(val){
   if(val.join){
     return val.join(" ");
@@ -28,28 +42,10 @@ hbs.registerHelper('j', function(val){
   }
 });
 
-/**
- * Provides object with profile data
- * @param  {String} slug path partial to profile data
- * @return {Object} JSON representation of a profile document stored in config.profilesDir
- *
+/*
+ * data provider
  */
-function getProfile(slug){
-  return new Promise(function(resolve, reject){
-    fs.readFile(config.profilesDir + '/' + slug + '/index.json', function(err, file){
-      if(err){
-        reject(err);
-      } else {
-        try {
-          resolve(JSON.parse(file.toString()));
-        }
-        catch (e) {
-          reject(e);
-        }
-      }
-    });
-  });
-}
+var store = new Store(config);
 
 /*
  * no favicon for now!
@@ -59,11 +55,14 @@ daemon.get('/favicon.ico', function(req, res){
 });
 
 /*
+ * ## GET /:slug/
+ *
  * sends profile document
  * supports content negotiation: RDFa and JSON-LD
+ * currently simply sends HTTP 500 whenever error happens
  */
 daemon.get('/:slug/', function(req, res){
-  getProfile(req.params.slug).then(function(data){
+  store.getProfile(req.params.slug).then(function(data){
     res.format({
       'text/html': function(){
         res.render('profile', data);
@@ -76,6 +75,7 @@ daemon.get('/:slug/', function(req, res){
       }
     });
   }).catch(function(err){
+    // FIXME: add support for error reporting service
     console.log(err);
     res.send(500);
   });
@@ -91,6 +91,11 @@ daemon.get('/:slug', function(req, res){
   res.redirect(303, req.protocol + '://' + req.get('Host') + req.path + '/');
 });
 
+
+/*
+ * ## web server
+ * we bind web server to the port specified in config file
+ */
 
 daemon.listen(config.port, function(){
   console.log('listening on ', config.port);
