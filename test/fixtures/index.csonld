@@ -1,0 +1,9 @@
+"@context": "http://ns.wwelves.org/lpp/plp/draft"
+type: "Organization"
+id: "https://wwelves.org"
+name: "worldwide elves"
+member: [
+  type: ["Person",  "foaf:Person"]
+  id: "https://wwelves.org/perpetual-tripper"
+  name: "elf Pavlik"
+]
