@@ -55,6 +55,33 @@ daemon.get('/favicon.ico', function(req, res){
 });
 
 /*
+ * ## GET /
+ *
+ * sends profile document
+ * supports content negotiation: RDFa and JSON-LD
+ * currently simply sends HTTP 500 whenever error happens
+ */
+daemon.get('/', function(req, res){
+  store.getProfile().then(function(data){
+    res.format({
+      'text/html': function(){
+        res.render('profile', data);
+      },
+      'application/json': function(){
+        res.json(data);
+      },
+      'application/ld+json': function(){
+        res.json(data);
+      }
+    });
+  }).catch(function(err){
+    // FIXME: add support for error reporting service
+    console.log(err);
+    res.send(500);
+  });
+});
+
+/*
  * ## GET /:slug/
  *
  * sends profile document

@@ -3,12 +3,12 @@ module.exports = function(grunt){
   grunt.initConfig({
     develop: {
       daemon: {
-        file: 'daemon.js'
+        file: 'src/daemon.js'
       }
     },
     watch: {
       daemon: {
-        files: ['daemon.js'],
+        files: ['src/daemon.js', 'src/store.js'],
         tasks: ['develop'],
         options: {
           nospawn: true

@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "cco": "http://purl.org/ontology/cco/core#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "id": "@id",
+    "type": "@type"
+  },
+  "id": "https://wwelves.org",
+  "type": "Organization",
+  "name": "worldwide elves",
+  "image": "http://wwelves.org/images/elf-pavlik.jpg",
+  "homeLocation": {
+    "type": "Place",
+    "id": "http://sws.geonames.org/6295630/",
+    "name": "Earth"
+  },
+  "description": "elves work with passion to bring smiles to everone faces",
+  "member": [
+    {
+      "type": "Person",
+      "id": "https://wwelves.org/perpetual-tripper",
+      "name": "elf Pavlik"
+    }
+  ]
+}

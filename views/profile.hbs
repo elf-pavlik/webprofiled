@@ -7,16 +7,24 @@
   <h1 property="name">{{name}}</h1>
   <img property="image" src="{{image}}" />
   <p property="description">{{description}}</p>
+  {{#if homeLocation}}
   <div rel="homeLocation">
     <p about="{{homeLocation.id}}" typeof="{{j homeLocation.type}}">
       home: <span property="name"><a href="{{homeLocation.id}}">{{homeLocation.name}}</a></span>
     </p>
   </div>
+  {{/if}}
+  {{#if currentLocation}}
   <div rel="currentLocation">
     <p about="{{currentLocation.id}}" typeof="{{j currentLocation.type}}">
       current location: <span property="name"><a href="{{currentLocation.id}}">{{currentLocation.name}}</a></span>
     </p>
   </div>
+  {{/if}}
+  {{#if birthDate}}
+  birthDate: <span property="birthDate">{{birthDate}}</span>
+  {{/if}}
+  {{#if contactPoint}}
   <h2>legacy profiles</h2>
   <ul rel="contactPoint">
     {{#each contactPoint}}
@@ -25,6 +33,8 @@
     </li>
     {{/each}}
   </ul>
+  {{/if}}
+  {{#if cco:habit}}
   <h2>habits</h2>
   <ul rel="cco:habit">
     {{#each cco:habit}}
@@ -33,7 +43,9 @@
     </li>
     {{/each}}
   </ul>
-  <h2>affiliations</h2>
+  {{/if}}
+  {{#if member}}
+  <h2>memebers</h2>
   <ul rel="member">
     {{#each member}}
     <li about="{{id}}" typeof="{{j type}}">
@@ -41,6 +53,17 @@
     </li>
     {{/each}}
   </ul>
+  {{/if}}
+  {{#if memberOf}}
+  <h2>affiliations</h2>
+  <ul rel="memberOf">
+    {{#each memberOf}}
+    <li about="{{id}}" typeof="{{j type}}">
+      <a href="{{id}}"><span property="name">{{name}}</span></a>
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
 </div>
 <footer>
   <p>page powered by open source <a href="https://github.com/elf-pavlik/webprofiled">webprofiled</a></p>

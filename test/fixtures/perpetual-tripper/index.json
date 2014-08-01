@@ -21,6 +21,7 @@
     "name": "Matera"
   },
   "description": "#hacker / #elf - living strictly #moneyless and #stateless already for over 5 years! #WorldPeaceGame #proplayer",
+  "birthDate": "1982-09-19",
   "contactPoint":[
     {
       "type": "ContactPoint",
@@ -56,7 +57,7 @@
       }
     }
   ],
-  "member":[
+  "memberOf":[
     {
       "type": "Organization",
       "id": "http://unmonastery.org",

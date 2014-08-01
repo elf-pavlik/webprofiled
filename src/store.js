@@ -18,7 +18,13 @@ function Store(config){
  */
 function getProfile(slug){
   return new Promise(function(resolve, reject){
-    fs.readFile(this.config.profilesDir + '/' + slug + '/index.json', function(err, file){
+    var filePath;
+    if(slug) {
+     filePath = this.config.profilesDir + '/' + slug + '/index.json';
+    } else {
+     filePath = this.config.profilesDir + '/index.json';
+    }
+    fs.readFile(filePath, function(err, file){
       if(err){
         reject(err);
       } else {
