@@ -4,7 +4,8 @@
     "cco": "http://purl.org/ontology/cco/core#",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "id": "@id",
-    "type": "@type"
+    "type": "@type",
+    "attendeeIn": { "@reverse": "attendee" }
   },
   "id": "https://wwelves.org/perpetual-tripper",
   "type": ["Person", "foaf:Person"],
@@ -17,8 +18,8 @@
   },
   "currentLocation": {
     "type": "Place",
-    "id": "http://sws.geonames.org/3173721/",
-    "name": "Matera"
+    "id": "http://sws.geonames.org/2950159/",
+    "name": "Berlin"
   },
   "description": "#hacker / #elf - living strictly #moneyless and #stateless already for over 5 years! #WorldPeaceGame #proplayer",
   "contactPoint":[
@@ -85,6 +86,25 @@
       "type": "Organization",
       "id": "http://edgeryders.eu",
       "name": "Edgeryders"
+    }
+  ],
+  "attendeeIn": [
+    {
+      "type": "Event",
+      "id": "http://2014.okfestival.org",
+      "name": "OKFestival 2014"
+    }, {
+      "type": "Event",
+      "id": "http://2014.ouisharefest.com",
+      "name": "OuiShare Fest 2014"
+    }, {
+      "type": "Event",
+      "id": "http://2013.elevate.at",
+      "name": "Elevate Festival 2013"
+    }, {
+      "type": "Event",
+      "id": "http://sense-camp.org/#2014",
+      "name": "SenseCamp Berlin 2014"
     }
   ]
 }
