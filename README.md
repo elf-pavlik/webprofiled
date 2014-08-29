@@ -7,7 +7,9 @@ simple web profiles daemon in node.js
 * RDFa - serves profile with RDFa
 * JSON-LD - content negotiation *Accept: application/ld+json*
 * 303 - redirects pages with triailing slash to ones with trailing slash - experimental way to address HTTPrange-14
-* 
+
+
 ## plans
 
-* Hydra + Schema.org actions http://www.hydra-cg.com/spec/latest/schema.org/
+* [POSSE](http://indiewebcamp.com/POSSE) - https://github.com/elf-pavlik/webprofiled/labels/POSSE
+* [PESOS](http://indiewebcamp.com/PESOS) - https://github.com/elf-pavlik/webprofiled/labels/PESOS
