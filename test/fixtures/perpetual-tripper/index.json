@@ -25,6 +25,14 @@
   "contactPoint":[
     {
       "type": "ContactPoint",
+      "id": "mailto:perpetual-tripper@wwelves.org",
+      "name": "email (smtp)"
+    }, {
+      "type": "ContactPoint",
+      "id": "xmpp:perpetual-tripper@wwelves.org",
+      "name": "jabber (xmpp)"
+    }, {
+      "type": "ContactPoint",
       "id": "https://github.com/elf-pavlik",
       "name": "Github"
     }, {
