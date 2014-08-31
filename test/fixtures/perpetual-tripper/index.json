@@ -114,5 +114,104 @@
       "id": "http://sense-camp.org/#2014",
       "name": "SenseCamp Berlin 2014"
     }
+  ],
+  "visited": [
+    {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Berlin"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Leipzig"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Munich"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Graz"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Vienna"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Paris"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Amsterdam"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Brussels"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Barcelona"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Porto"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Lisbon"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Bologna"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Trento"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Rome"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Gdansk"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Warsaw"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Prague"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Basel"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Zurich"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "New York"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "San Francisco"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Los Angeles"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Boston"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org//",
+      "name": "Strasbourg"
+    }
   ]
 }

@@ -49,6 +49,14 @@
     </li>
     {{/each}}
   </ul>
+  <h2>places</h2>
+  <ul rel="visited">
+    {{#each visited}}
+    <li about="{{id}}" typeof="{{j type}}">
+      <a href="{{id}}"><span property="name">{{name}}</span></a>
+    </li>
+    {{/each}}
+  </ul>
 </div>
 <footer>
   <p>page powered by open source <a href="https://github.com/elf-pavlik/webprofiled">webprofiled</a></p>
