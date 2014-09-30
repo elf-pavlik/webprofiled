@@ -26,6 +26,7 @@ simple web profiles daemon in node.js
  * [x] attendeeIn / organizerIn / performerIn / sponsorIn (Event)
  * [x] visited (Place)
  * [ ] seeks / makesOffer (Asset)
+ * [ ] describedIn (CreativeWork)
 * [ ] Organization
  * [ ] subOrganization (Organization)
  * [ ] member (Person)
