@@ -18,10 +18,10 @@
     </p>
   </div>
   <h2>contact points</h2>
-  <ul rel="contactPoint">
+  <ul>
     {{#each contactPoint}}
-    <li about="{{id}}" typeof="{{j type}}">
-      <a rel="me" href="{{id}}"><span property="name">{{name}}</span></a>
+    <li >
+      <a rel="me" rel="contactPoint" typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
     </li>
     {{/each}}
   </ul>
