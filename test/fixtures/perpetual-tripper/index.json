@@ -118,99 +118,107 @@
   "visited": [
     {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2950159/",
       "name": "Berlin"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2879139/",
       "name": "Leipzig"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2867714/",
       "name": "Munich"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2778067/",
       "name": "Graz"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2761369/",
       "name": "Vienna"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2988507/",
       "name": "Paris"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2759794/",
       "name": "Amsterdam"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2800866/",
       "name": "Brussels"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/3128760/",
       "name": "Barcelona"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2735943/",
       "name": "Porto"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2267057/",
       "name": "Lisbon"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/3181928/",
       "name": "Bologna"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/3181913/",
+      "name": "Bolzano"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org/3165243/",
       "name": "Trento"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/3169070/",
       "name": "Rome"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/3173721/",
+      "name": "Matera"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org/3099434/",
       "name": "Gdansk"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/756135/",
       "name": "Warsaw"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/3067696/",
       "name": "Prague"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2661604/",
       "name": "Basel"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2657896/",
       "name": "Zurich"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/5128581/",
       "name": "New York"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/5391959/",
       "name": "San Francisco"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/5368361/",
       "name": "Los Angeles"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/4930956/",
       "name": "Boston"
     }, {
       "type": "Place",
-      "id": "http://sws.geonames.org//",
+      "id": "http://sws.geonames.org/2973783/",
       "name": "Strasbourg"
     }
   ]
