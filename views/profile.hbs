@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <body
   vocab="http://schema.org/"
@@ -7,20 +8,22 @@
   <h1 property="name">{{name}}</h1>
   <img property="image" src="{{image}}" />
   <p property="description">{{description}}</p>
-  <div rel="homeLocation">
-    <p about="{{homeLocation.id}}" typeof="{{j homeLocation.type}}">
-      home: <span property="name"><a href="{{homeLocation.id}}">{{homeLocation.name}}</a></span>
-    </p>
-  </div>
-  <div rel="currentLocation">
-    <p about="{{currentLocation.id}}" typeof="{{j currentLocation.type}}">
-      current location: <span property="name"><a href="{{currentLocation.id}}">{{currentLocation.name}}</a></span>
-    </p>
-  </div>
+  <p rel="homeLocation">
+    home:
+    <a typeof="{{j homeLocation.type}}" href="{{homeLocation.id}}">
+      <span property="name">{{homeLocation.name}}</span>
+    </a>
+  </p>
+  <p rel="currentLocation">
+    current location:
+    <a typeof="{{j currentLocation.type}}" href="{{currentLocation.id}}">
+      <span property="name">{{currentLocation.name}}</span>
+    </a>
+  </p>
   <h2>contact points</h2>
   <ul>
     {{#each contactPoint}}
-    <li >
+    <li>
       <a rel="me" rel="contactPoint" typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
     </li>
     {{/each}}
@@ -29,37 +32,42 @@
   <ul rel="cco:habit">
     {{#each cco:habit}}
     <li typeof="{{j type}}">
-      <div rel="cco:topic" resource="{{cco:topic.id}}"><a href="{{cco:topic.id}}" target="dbpedia"><span property="name">{{cco:topic.name}}</span></a></div>
+      <a rel="cco:topic" href="{{cco:topic.id}}" target="dbpedia">
+        <span property="name">{{cco:topic.name}}</span>
+      </a>
     </li>
     {{/each}}
   </ul>
   <h2>affiliations</h2>
   <ul rel="member">
     {{#each member}}
-    <li about="{{id}}" typeof="{{j type}}">
-      <a href="{{id}}"><span property="name">{{name}}</span></a>
+    <li>
+      <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
     </li>
     {{/each}}
   </ul>
   <h2>events</h2>
   <ul rev="attendee">
     {{#each attendeeIn}}
-    <li about="{{id}}" typeof="{{j type}}">
-      <a href="{{id}}"><span property="name">{{name}}</span></a>
+    <li>
+      <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
     </li>
     {{/each}}
   </ul>
   <h2>places</h2>
   <ul rel="visited">
     {{#each visited}}
-    <li about="{{id}}" typeof="{{j type}}">
-      <a href="{{id}}"><span property="name">{{name}}</span></a>
+    <li>
+      <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
     </li>
     {{/each}}
   </ul>
 </div>
 <footer>
-  <p>page powered by open source <a href="https://github.com/elf-pavlik/webprofiled">webprofiled</a></p>
+  page powered by open source
+  <a typeof="SoftwareApplication" href="https://github.com/elf-pavlik/webprofiled">
+    <span property="name">webprofiled</span>
+  </a>
 </footer>
 </body>
 </html>
