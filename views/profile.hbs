@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html>
-<body
+<html
   vocab="http://schema.org/"
-  prefix="cco: http://purl.org/ontology/cco/core# foaf: http://xmlns.com/foaf/0.1/"
+  prefix="cco: http://purl.org/ontology/cco/core# foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns#"
   >
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <title>elf Pavlik | worldwide elves</title>
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="{{name}}" />
+  <meta property="og:description" content="{{description}}" />
+  <meta property="og:url" content="{{id}}/" />
+  <meta property="og:image" content="{{image}}" />
+</head>
+<body>
 <div about="{{id}}" typeof="{{j type}}">
   <h1 property="name">{{name}}</h1>
   <img property="image" src="{{image}}" />
