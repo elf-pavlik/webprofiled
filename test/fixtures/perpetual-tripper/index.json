@@ -94,6 +94,14 @@
       "type": "Organization",
       "id": "http://edgeryders.eu",
       "name": "Edgeryders"
+    }, {
+      "type": "Organization",
+      "id": "http://www.w3.org",
+      "name": "The World Wide Web Consortium (W3C) "
+    }, {
+      "type": "Organization",
+      "id": "http://indiewebcamp.com/",
+      "name": "IndieWebCamp"
     }
   ],
   "attendeeIn": [
@@ -111,8 +119,16 @@
       "name": "Elevate Festival 2013"
     }, {
       "type": "Event",
+      "id": "http://2014.elevate.at",
+      "name": "Elevate Festival 2014"
+    }, {
+      "type": "Event",
       "id": "http://sense-camp.org/#2014",
       "name": "SenseCamp Berlin 2014"
+    }, {
+      "type": "Event",
+      "id": "https://border-none.net/2014",
+      "name": "border:none 2014"
     }
   ],
   "visited": [
