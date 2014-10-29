@@ -1,0 +1,12 @@
+{
+  "name": "webprofiled",
+  "version": "0.0.0",
+  "authors": [
+    "elf Pavlik <perpetual-tripper@wwelves.org>"
+  ],
+  "license": "Unlicense",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.0"
+  }
+}

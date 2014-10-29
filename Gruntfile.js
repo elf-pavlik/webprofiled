@@ -13,13 +13,25 @@ module.exports = function(grunt){
         options: {
           nospawn: true
         }
+      },
+      styles: {
+        files: ['assets/screen.less'],
+        tasks: ['less']
       }
     },
+    less: {
+      dev: {
+        files: {
+          "assets/screen.css": "assets/screen.less"
+        }
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-develop');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
-  grunt.registerTask('default', ['develop', 'watch']);
+  grunt.registerTask('default', ['less', 'develop', 'watch']);
 
 };
