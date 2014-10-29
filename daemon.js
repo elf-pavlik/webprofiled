@@ -21,7 +21,7 @@ daemon.options('*', cors());
 daemon.set('view engine', 'hbs');
 
 hbs.registerHelper('j', function(val){
-  if(val.join){
+  if(val && val.join){
     return val.join(" ");
   } else {
     return val;

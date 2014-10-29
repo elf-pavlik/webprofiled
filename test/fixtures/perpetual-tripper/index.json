@@ -237,5 +237,22 @@
       "id": "http://sws.geonames.org/2973783/",
       "name": "Strasbourg"
     }
+  ],
+  "seeks": [
+    {
+      "type": "Demand",
+      "itemOffered": {
+        "type": "Product",
+        "id": "http://bad-elf.com/products/be-gps-2200",
+        "name": "Bad Elf GPS Pro"
+      }
+    }, {
+      "type": "Demand",
+      "itemOffered": {
+        "type": "Product",
+        "id": "http://www.interrail.eu/interrail-passes/global-pass#adult",
+        "name": "InterRail Global Pass"
+      }
+    }
   ]
 }

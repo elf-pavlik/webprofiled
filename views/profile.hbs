@@ -73,6 +73,14 @@
     </li>
     {{/each}}
   </ul>
+  <h2>wishlist</h2>
+  <ul rel="seeks">
+    {{#each seeks}}
+    <li typeof="{{j type}}">
+      <a property="itemOffered" typeof="{{j itemOffered.type}}" href="{{itemOffered.id}}"><span property="name">{{itemOffered.name}}</span></a>
+    </li>
+    {{/each}}
+  </ul>
 </div>
 <footer>
   page powered by open source
