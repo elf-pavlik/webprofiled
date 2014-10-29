@@ -243,7 +243,7 @@
       "type": "Demand",
       "itemOffered": {
         "type": "Product",
-        "id": "http://bad-elf.com/products/be-gps-2200",
+        "id": "http://bad-elf.com/pages/be-gps-2200-detail",
         "name": "Bad Elf GPS Pro"
       }
     }, {
