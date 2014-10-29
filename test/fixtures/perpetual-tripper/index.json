@@ -249,9 +249,16 @@
     }, {
       "type": "Demand",
       "itemOffered": {
-        "type": "Product",
+        "type": "Ticket",
         "id": "http://www.interrail.eu/interrail-passes/global-pass#adult",
         "name": "InterRail Global Pass"
+      }
+    }, {
+      "type": "Demand",
+      "itemOffered": {
+        "type": "Ticket",
+        "id": "https://copass.org/plans#adventurer",
+        "name": "Copass: adventurer"
       }
     }
   ]
