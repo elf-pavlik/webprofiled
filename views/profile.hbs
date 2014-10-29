@@ -13,9 +13,15 @@
   <meta property="og:description" content="{{description}}" />
   <meta property="og:url" content="{{id}}/" />
   <meta property="og:image" content="{{image}}" />
+
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="/assets/screen.css" />
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-<div about="{{id}}" typeof="{{j type}}">
+<div about="{{id}}" typeof="{{j type}}" class="container">
   <h1 property="name">{{name}}</h1>
   <img property="image" src="{{image}}" />
   <p property="description">{{description}}</p>

@@ -2,6 +2,7 @@ var fs = require('fs');
 var Promise = require('es6-promise').Promise;
 var express = require('express');
 var cors = require('cors');
+var serveStatic = require('serve-static');
 var hbs = require('hbs');
 var config = require('./config.json');
 
@@ -16,6 +17,11 @@ var daemon = express();
 daemon.use(cors({ origin: true, credentials: true }));
 daemon.options('*', cors());
 
+
+/*
+ * Save static content
+ */
+daemon.use(serveStatic('.'));
 
 // set view engine to handlebars
 daemon.set('view engine', 'hbs');
