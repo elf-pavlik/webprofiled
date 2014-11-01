@@ -53,6 +53,20 @@
     {
       "type": "cco:CognitiveCharacteristic",
       "cco:topic": {
+        "id": "http://dbpedia.org/resource/Vegetarianism",
+        "name": "Vegetarianism"
+      }
+    },
+    {
+      "type": "cco:CognitiveCharacteristic",
+      "cco:topic": {
+        "id": "http://dbpedia.org/resource/Veganism",
+        "name": "Veganism"
+      }
+    },
+    {
+      "type": "cco:CognitiveCharacteristic",
+      "cco:topic": {
         "id": "http://dbpedia.org/resource/Joint_(cannabis)",
         "name": "Joint (cannabis)"
       }
