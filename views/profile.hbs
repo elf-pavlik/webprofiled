@@ -41,64 +41,79 @@
           </a>
         </p>
       </ul>
+      <ul>
+        {{#each contactPoint}}
+        <li>
+          <a rel="me" rel="contactPoint" typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
+        </li>
+        {{/each}}
+      </ul>
     </div>
   </div>
-  <h2>contact points</h2>
-  <ul>
-    {{#each contactPoint}}
-    <li>
-      <a rel="me" rel="contactPoint" typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
-    </li>
-    {{/each}}
-  </ul>
-  <h2>habits</h2>
-  <ul rel="cco:habit">
-    {{#each cco:habit}}
-    <li typeof="{{j type}}">
-      <a rel="cco:topic" href="{{cco:topic.id}}" target="dbpedia">
-        <span property="name">{{cco:topic.name}}</span>
-      </a>
-    </li>
-    {{/each}}
-  </ul>
-  <h2>affiliations</h2>
-  <ul rel="member">
-    {{#each member}}
-    <li>
-      <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
-    </li>
-    {{/each}}
-  </ul>
-  <h2>events</h2>
-  <ul rev="attendee">
-    {{#each attendeeIn}}
-    <li>
-      <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
-    </li>
-    {{/each}}
-  </ul>
-  <h2>places</h2>
-  <ul rel="visited">
-    {{#each visited}}
-    <li>
-      <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
-    </li>
-    {{/each}}
-  </ul>
-  <h2>wishlist</h2>
-  <ul rel="seeks">
-    {{#each seeks}}
-    <li typeof="{{j type}}">
-      <a property="itemOffered" typeof="{{j itemOffered.type}}" href="{{itemOffered.id}}"><span property="name">{{itemOffered.name}}</span></a>
-    </li>
-    {{/each}}
-  </ul>
+  <div id="clouds" class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <h2 class="panel-heading">habits</h2>
+        <ul rel="cco:habit" class="panel-body">
+          {{#each cco:habit}}
+          <li typeof="{{j type}}">
+            <a rel="cco:topic" href="{{cco:topic.id}}" target="dbpedia">
+              <span property="name">{{cco:topic.name}}</span>
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="panel panel-default">
+        <h2 class="panel-heading">places</h2>
+        <ul rel="visited" class="panel-body">
+          {{#each visited}}
+          <li>
+            <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="panel panel-default">
+        <h2 class="panel-heading">wishlist</h2>
+        <ul rel="seeks" class="panel-body">
+          {{#each seeks}}
+          <li typeof="{{j type}}">
+            <a property="itemOffered" typeof="{{j itemOffered.type}}" href="{{itemOffered.id}}"><span property="name">{{itemOffered.name}}</span></a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <h2 class="panel-heading">affiliations</h2>
+        <ul rel="member" class="panel-body">
+          {{#each member}}
+          <li>
+            <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="panel panel-default">
+        <h2 class="panel-heading">events</h2>
+        <ul rev="attendee" class="panel-body">
+          {{#each attendeeIn}}
+          <li>
+            <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    page powered by open source
+    <a typeof="SoftwareApplication" href="https://github.com/elf-pavlik/webprofiled">
+      <span property="name">webprofiled</span>
+    </a>
+  </footer>
 </div>
-<footer>
-  page powered by open source
-  <a typeof="SoftwareApplication" href="https://github.com/elf-pavlik/webprofiled">
-    <span property="name">webprofiled</span>
-  </a>
-</footer>
 </body>
 </html>
