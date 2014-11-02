@@ -22,21 +22,27 @@
 </head>
 <body>
 <div about="{{id}}" typeof="{{j type}}" class="container">
-  <h1 property="name">{{name}}</h1>
-  <img property="image" src="{{image}}" />
-  <p property="description">{{description}}</p>
-  <p rel="homeLocation">
-    home:
-    <a typeof="{{j homeLocation.type}}" href="{{homeLocation.id}}">
-      <span property="name">{{homeLocation.name}}</span>
-    </a>
-  </p>
-  <p rel="currentLocation">
-    current location:
-    <a typeof="{{j currentLocation.type}}" href="{{currentLocation.id}}">
-      <span property="name">{{currentLocation.name}}</span>
-    </a>
-  </p>
+  <div class="row">
+    <div id="main" class="col-md-3">
+      <h1 property="name">{{name}}</h1>
+      <img property="image" src="{{image}}" />
+    </div>
+    <div class="col-md-6">
+      <p property="description">{{description}}</p>
+      <ul id="geo">
+        <li rel="homeLocation">
+          <a typeof="{{j homeLocation.type}}" href="{{homeLocation.id}}">
+            <span property="name">{{homeLocation.name}}</span>
+          </a>
+        </li>
+        <li rel="currentLocation">
+          <a typeof="{{j currentLocation.type}}" href="{{currentLocation.id}}">
+            <span property="name">{{currentLocation.name}}</span>
+          </a>
+        </p>
+      </ul>
+    </div>
+  </div>
   <h2>contact points</h2>
   <ul>
     {{#each contactPoint}}
