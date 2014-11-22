@@ -67,6 +67,13 @@
     {
       "type": "cco:CognitiveCharacteristic",
       "cco:topic": {
+        "id": "http://dbpedia.org/resource/Polyamory",
+        "name": "Polyamory"
+      }
+    },
+    {
+      "type": "cco:CognitiveCharacteristic",
+      "cco:topic": {
         "id": "http://dbpedia.org/resource/Joint_(cannabis)",
         "name": "Joint (cannabis)"
       }
@@ -143,6 +150,10 @@
       "type": "Event",
       "id": "https://border-none.net/2014",
       "name": "border:none 2014"
+    }, {
+      "type": "Event",
+      "id": "https://squatconf.eu",
+      "name": "Squatconf Paris 2014"
     }
   ],
   "visited": [
@@ -250,6 +261,14 @@
       "type": "Place",
       "id": "http://sws.geonames.org/2973783/",
       "name": "Strasbourg"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org/2861650/",
+      "name": "Nuremberg"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org/2925533/",
+      "name": "Frankfurt am Main"
     }
   ],
   "seeks": [
