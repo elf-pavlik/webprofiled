@@ -293,6 +293,27 @@
         "id": "https://copass.org/plans#adventurer",
         "name": "Copass: adventurer"
       }
+    }, {
+      "type": "Demand",
+      "itemOffered": {
+        "type": "Product",
+        "id": "https://www.fairphone.com/",
+        "name": "Fairphone"
+      }
+    }, {
+      "type": "Demand",
+      "itemOffered": {
+        "type": "Product",
+        "id": "https://mobilevikings.be/en/offer/bundles/call-text-data/",
+        "name": "Mobile Vikings SIM"
+      }
+    }, {
+      "type": "Demand",
+      "itemOffered": {
+        "type": "Product",
+        "id": "https://mobilevikings.be/en/offer/gift/cards/",
+        "name": "Mobile Vikings Gift Cards"
+      }
     }
   ]
 }
