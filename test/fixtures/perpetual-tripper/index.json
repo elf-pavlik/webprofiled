@@ -154,6 +154,14 @@
       "type": "Event",
       "id": "https://squatconf.eu",
       "name": "Squatconf Paris 2014"
+    }, {
+      "type": "Event",
+      "id": "https://apidays.io",
+      "name": "APIdays Paris 2014"
+    }, {
+      "type": "Event",
+      "id": "https://events.ccc.de/congress/2014",
+      "name": "31st Chaos Communication Congress (31C3)"
     }
   ],
   "visited": [
