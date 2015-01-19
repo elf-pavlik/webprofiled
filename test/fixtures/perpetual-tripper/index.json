@@ -49,6 +49,16 @@
       "name": "Facebook"
     }
   ],
+  "cco:skill": [
+    {
+      "id": "http://dbpedia.org/resource/General_Transit_Feed_Specification",
+      "name": "GTFS"
+    },
+    {
+      "id": "http://dbpedia.org/resource/E-Prime",
+      "name": "E-Prime"
+    }
+  ],
   "cco:habit": [
     {
       "type": "cco:CognitiveCharacteristic",
@@ -277,6 +287,10 @@
       "type": "Place",
       "id": "http://sws.geonames.org/2925533/",
       "name": "Frankfurt am Main"
+    }, {
+      "type": "Place",
+      "id": "http://sws.geonames.org/2911298/",
+      "name": "Hamburg"
     }
   ],
   "seeks": [
@@ -321,6 +335,13 @@
         "type": "Product",
         "id": "https://mobilevikings.be/en/offer/gift/cards/",
         "name": "Mobile Vikings Gift Cards"
+      }
+    }, {
+      "type": "Demand",
+      "itemOffered": {
+        "type": "Product",
+        "id": "https://www.nitrokey.com/",
+        "name": "Nitrokey"
       }
     }
   ]
