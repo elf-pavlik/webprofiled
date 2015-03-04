@@ -6,7 +6,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-  <title>elf Pavlik | worldwide elves</title>
+  <title>Portable Linked Profiles | hackers4peace</title>
 
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="{{name}}" />
@@ -29,25 +29,6 @@
     </div>
     <div class="col-md-6">
       <p property="description">{{description}}</p>
-      <ul id="geo">
-        <li rel="homeLocation">
-          <a typeof="{{j homeLocation.type}}" href="{{homeLocation.id}}">
-            <span property="name">{{homeLocation.name}}</span>
-          </a>
-        </li>
-        <li rel="currentLocation">
-          <a typeof="{{j currentLocation.type}}" href="{{currentLocation.id}}">
-            <span property="name">{{currentLocation.name}}</span>
-          </a>
-        </p>
-      </ul>
-      <ul>
-        {{#each contactPoint}}
-        <li>
-          <a rel="me" rel="contactPoint" typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
-        </li>
-        {{/each}}
-      </ul>
     </div>
   </div>
   <div id="clouds" class="row">
@@ -56,42 +37,12 @@
       <div class="panel panel-default">
         <h2 class="panel-heading">
           <span class="glyphicon glyphicon-repeat"></span>
-          habits
+          contributors
         </h2>
-        <ul rel="cco:habit" class="panel-body">
-          {{#each cco:habit}}
-          <li typeof="{{j type}}">
-            <a rel="cco:topic" href="{{cco:topic.id}}" target="dbpedia">
-              <span property="name">{{cco:topic.name}}</span>
-            </a>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
-      <div class="panel panel-default">
-        <h2 class="panel-heading">
-          <span class="glyphicon glyphicon-gift"></span>
-          wishlist
-        </h2>
-        <ul rel="seeks" class="panel-body">
-          {{#each seeks}}
-          <li typeof="{{j type}}">
-            <a property="itemOffered" typeof="{{j itemOffered.type}}" href="{{itemOffered.id}}"><span property="name">{{itemOffered.name}}</span></a>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
-    </div>
-    <div class="col-md-5">
-      <div class="panel panel-default">
-        <h2 class="panel-heading">
-          <span class="glyphicon glyphicon-asterisk"></span>
-          affiliations
-        </h2>
-        <ul rel="member" class="panel-body">
-          {{#each member}}
+        <ul rel="contributor" class="panel-body">
+          {{#each contributor}}
           <li>
-            <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
+          <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
           </li>
           {{/each}}
         </ul>
@@ -101,23 +52,23 @@
           <span class="glyphicon glyphicon-calendar"></span>
           events
         </h2>
-        <ul rev="attendee" class="panel-body">
-          {{#each attendeeIn}}
+        <ul rel="event" class="panel-body">
+          {{#each event}}
           <li>
-            <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
+          <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
           </li>
           {{/each}}
         </ul>
       </div>
       <div class="panel panel-default">
         <h2 class="panel-heading">
-          <span class="glyphicon glyphicon-map-marker"></span>
-          places
+          <span class="glyphicon glyphicon-list"></span>
+          listings
         </h2>
-        <ul rel="visited" class="panel-body">
-          {{#each visited}}
+        <ul rel="listedIn" class="panel-body">
+          {{#each listedIn}}
           <li>
-            <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
+          <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
           </li>
           {{/each}}
         </ul>
