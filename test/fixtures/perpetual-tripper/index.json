@@ -33,6 +33,10 @@
       "name": "jabber (xmpp)"
     }, {
       "type": "ContactPoint",
+      "id": "irc://irc.freenode.net/elf-pavlik,isnick",
+      "name": "freenode (irc)"
+    }, {
+      "type": "ContactPoint",
       "id": "https://github.com/elf-pavlik",
       "name": "Github"
     }, {
