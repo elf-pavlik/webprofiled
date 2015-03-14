@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
   vocab="http://schema.org/"
-  prefix="cco: http://purl.org/ontology/cco/core# foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns#"
+  prefix="cco: http://purl.org/ontology/cco/core# foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# sec: https://w3id.org/security#"
   >
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -53,6 +53,15 @@
         </p>
       </ul>
       <ul>
+        <li><span class="glyphicon glyphicon-certificate"></span></li>
+        {{#each sec:publicKey}}
+        <li>
+          <a property="sec:publicKey" href="{{id}}"><span property="name">{{name}}</span></a>
+        </li>
+        {{/each}}
+      </ul>
+      <ul>
+        <li><span class="glyphicon glyphicon-comment"></span></li>
         {{#each contactPoint}}
         <li>
           <a rel="me" property="contactPoint" typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
@@ -60,6 +69,7 @@
         {{/each}}
       </ul>
       <ul>
+        <li><span class="glyphicon glyphicon-user"></span></li>
         {{#each sameAs}}
         <li>
           <a rel="me" property="contactPoint" href="{{id}}"><span property="name">{{name}}</span></a>
