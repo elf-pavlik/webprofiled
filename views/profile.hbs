@@ -29,6 +29,17 @@
     </div>
     <div class="col-md-6">
       <p property="description">{{description}}</p>
+      <ul id="b-day">
+        <li>
+          <span class="glyphicon glyphicon-cloud-download"></span>
+          <span property="birthDate">{{birthDate}}</span>
+        </li>
+        <li>
+          <span class="glyphicon glyphicon-forward"></span>
+          <span property="birthDate">{{birthDayParty}}</span>
+          <span class="glyphicon glyphicon-fire"></span>
+        </li>
+      </ul>
       <ul id="geo">
         <li rel="homeLocation">
           <a typeof="{{j homeLocation.type}}" href="{{homeLocation.id}}">

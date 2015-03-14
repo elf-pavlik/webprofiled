@@ -11,6 +11,8 @@
   "type": ["Person", "foaf:Person"],
   "name": "elf Pavlik",
   "image": "http://wwelves.org/images/elf-pavlik.jpg",
+  "birthDate": "1982-09-19",
+  "birthDayParty": "2015-09-19",
   "homeLocation": {
     "type": "Place",
     "id": "http://sws.geonames.org/6295630/",
