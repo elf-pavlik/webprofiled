@@ -24,7 +24,7 @@
     "name": "Berlin"
   },
   "description": "#hacker / #elf - living strictly #moneyless and #stateless already for over 5 years! #WorldPeaceGame #ZeroWaste",
-  "contactPoint":[
+  "contactPoint": [
     {
       "type": "ContactPoint",
       "id": "mailto:perpetual-tripper@wwelves.org",
@@ -37,20 +37,19 @@
       "type": "ContactPoint",
       "id": "irc://irc.freenode.net/elf-pavlik,isnick",
       "name": "freenode (irc)"
-    }, {
-      "type": "ContactPoint",
+    }
+  ],
+  "sameAs": [
+    {
       "id": "https://github.com/elf-pavlik",
       "name": "Github"
     }, {
-      "type": "ContactPoint",
       "id": "https://twitter.com/elfpavlik",
       "name": "Twitter"
     }, {
-      "type": "ContactPoint",
       "id": "https://plus.google.com/+elfPavlik",
       "name": "Google+"
     }, {
-      "type": "ContactPoint",
       "id": "https://facebook.com/elf.pavlik",
       "name": "Facebook"
     }

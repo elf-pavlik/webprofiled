@@ -55,7 +55,14 @@
       <ul>
         {{#each contactPoint}}
         <li>
-          <a rel="me" rel="contactPoint" typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
+          <a rel="me" property="contactPoint" typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
+        </li>
+        {{/each}}
+      </ul>
+      <ul>
+        {{#each sameAs}}
+        <li>
+          <a rel="me" property="contactPoint" href="{{id}}"><span property="name">{{name}}</span></a>
         </li>
         {{/each}}
       </ul>
