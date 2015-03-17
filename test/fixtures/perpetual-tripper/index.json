@@ -3,10 +3,15 @@
     "@vocab": "http://schema.org/",
     "cco": "http://purl.org/ontology/cco/core#",
     "foaf": "http://xmlns.com/foaf/0.1/",
+    "opo": "http://online-presence.net/opo/ns#",
     "sec": "https://w3id.org/security#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "hydra": "http://www.w3.org/ns/hydra/core#",
     "id": "@id",
     "type": "@type",
-    "attendeeIn": { "@reverse": "attendee" }
+    "attendeeIn": { "@reverse": "attendee" },
+    "authorOf": { "@reverse": "author" },
+    "currentLocation": "opo:currentLocation"
   },
   "id": "https://wwelves.org/perpetual-tripper",
   "type": ["Person", "foaf:Person"],
@@ -356,6 +361,53 @@
       "id": "https://wwelves.org/perpetual-tripper/keys/1179616f-ae06-466f-82ba-225461e689f1",
       "name": "F5761A1E",
       "sec:publicKeyPem": "-----BEGIN PGP PUBLIC KEY BLOCK-----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LPz3-----END PGP PUBLIC KEY BLOCK-----"
+    }
+  ],
+  "hydra:collection": [
+    {
+      "id": "http://media.hackers4peace.net/19a95844-4180-4325-9b3a-ec5ec6d04dc9",
+      "type": ["hydra:Collection", "ldp:Container"],
+      "hydra:manages": {
+        "hydra:object": "https://wwelves.org/perpetual-tripper",
+        "hydra:property": "author",
+        "hydra:type": "ImageObject"
+      },
+      "hydra:operation":[
+        {
+          "@type": ["AddAction", "ldp:Post"],
+          "hydra:expects": "ImageObject"
+        }
+      ]
+    },
+    {
+      "id": "http://media.hackers4peace.net/4b717f07-bfa7-4e48-a959-e1dbd837776b",
+      "type": ["hydra:Collection", "ldp:Container"],
+      "hydra:manages": {
+        "hydra:object": "https://wwelves.org/perpetual-tripper",
+        "hydra:property": "author",
+        "hydra:type": "VideoObject"
+      },
+      "hydra:operation":[
+        {
+          "@type": ["AddAction", "ldp:Post"],
+          "hydra:expects": "VideoObject"
+        }
+      ]
+    },
+    {
+      "id": "http://media.hackers4peace.net/2d791b75-dacf-43f7-8fdb-9440c7f098a",
+      "type": ["hydra:Collection", "ldp:Container"],
+      "hydra:manages": {
+        "hydra:object": "https://wwelves.org/perpetual-tripper",
+        "hydra:property": "author",
+        "hydra:type": "AudioObject"
+      },
+      "hydra:operation":[
+        {
+          "@type": ["AddAction", "ldp:Post"],
+          "hydra:expects": "AudioObject"
+        }
+      ]
     }
   ]
 }
