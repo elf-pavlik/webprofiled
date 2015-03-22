@@ -367,6 +367,7 @@
     {
       "id": "http://media.hackers4peace.net/19a95844-4180-4325-9b3a-ec5ec6d04dc9",
       "type": ["hydra:Collection", "ldp:Container"],
+      "name": "Images",
       "hydra:manages": {
         "hydra:object": "https://wwelves.org/perpetual-tripper",
         "hydra:property": "author",
@@ -382,6 +383,7 @@
     {
       "id": "http://media.hackers4peace.net/4b717f07-bfa7-4e48-a959-e1dbd837776b",
       "type": ["hydra:Collection", "ldp:Container"],
+      "name": "Videos",
       "hydra:manages": {
         "hydra:object": "https://wwelves.org/perpetual-tripper",
         "hydra:property": "author",
@@ -397,6 +399,7 @@
     {
       "id": "http://media.hackers4peace.net/2d791b75-dacf-43f7-8fdb-9440c7f098ae",
       "type": ["hydra:Collection", "ldp:Container"],
+      "name": "Audio",
       "hydra:manages": {
         "hydra:object": "https://wwelves.org/perpetual-tripper",
         "hydra:property": "author",
