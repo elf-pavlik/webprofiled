@@ -3,6 +3,7 @@
     "@vocab": "http://schema.org/",
     "cco": "http://purl.org/ontology/cco/core#",
     "foaf": "http://xmlns.com/foaf/0.1/",
+    "doap": "http://usefulinc.com/ns/doap#",
     "opo": "http://online-presence.net/opo/ns#",
     "sec": "https://w3id.org/security#",
     "ldp": "http://www.w3.org/ns/ldp#",
@@ -105,6 +106,13 @@
         "id": "http://dbpedia.org/resource/Chocolate",
         "name": "Chocolate"
       }
+    }
+  ],
+  "foaf:currentProject":[
+    {
+      "type": "doap:Project",
+      "id": "http://hackers4peace.net/plp",
+      "name": "Portable Linked Profiles"
     }
   ],
   "member":[
@@ -355,6 +363,19 @@
         "name": "Nitrokey"
       }
     }
+  ],
+  "owns": [
+    {
+      "type": "IndividualProduct",
+      "id": "https://wwelves.org/perpetual-tripper/401967f0-0f53-4c5c-8902-7b14803e12f1",
+      "name": "Lenovo: ThinkPad R400"
+    },
+    {
+      "type": "IndividualProduct",
+      "id": "https://wwelves.org/perpetual-tripper/401967f0-0f53-4c5c-8902-7b14803e12f1",
+      "name": "Samsung GT-I90000"
+    }
+
   ],
   "sec:publicKey": [
     {
