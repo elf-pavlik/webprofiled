@@ -29,6 +29,10 @@
     </div>
     <div class="col-md-6">
       <p property="description">{{description}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
       <ul id="b-day">
         <li>
           <span class="glyphicon glyphicon-cloud-download"></span>
@@ -76,11 +80,6 @@
         </li>
         {{/each}}
       </ul>
-    </div>
-  </div>
-  <div id="clouds" class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-4">
       <div class="panel panel-default">
         <h2 class="panel-heading">
           <span class="glyphicon glyphicon-repeat"></span>
@@ -92,6 +91,21 @@
             <a rel="cco:topic" href="{{cco:topic.id}}" target="dbpedia">
               <span property="name">{{cco:topic.name}}</span>
             </a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <h2 class="panel-heading">
+          <span class="glyphicon glyphicon-wrench"></span>
+          projects
+        </h2>
+        <ul rel="foaf:currentProject" class="panel-body">
+          {{#each foaf:currentProject}}
+          <li>
+            <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
           </li>
           {{/each}}
         </ul>
@@ -124,19 +138,6 @@
       </div>
     </div>
     <div class="col-md-5">
-      <div class="panel panel-default">
-        <h2 class="panel-heading">
-          <span class="glyphicon glyphicon-wrench"></span>
-          projects
-        </h2>
-        <ul rel="foaf:currentProject" class="panel-body">
-          {{#each foaf:currentProject}}
-          <li>
-            <a typeof="{{j type}}" href="{{id}}"><span property="name">{{name}}</span></a>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
       <div class="panel panel-default">
         <h2 class="panel-heading">
           <span class="glyphicon glyphicon-asterisk"></span>
