@@ -17,7 +17,7 @@
   "id": "https://wwelves.org/perpetual-tripper",
   "type": ["Person", "foaf:Person"],
   "name": "elf Pavlik",
-  "image": "http://wwelves.org/images/elf-pavlik.jpg",
+  "image": "https://wwelves.org/images/elf-pavlik.jpg",
   "birthDate": "1982-09-19",
   "birthDayParty": "2015-09-19",
   "homeLocation": {
